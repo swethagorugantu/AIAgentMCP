@@ -15,3 +15,5 @@ mvn test -Dtest=RegistrationLoginTest
 ```
 
 The test registers a user through the UI, verifies the login API contract, and writes the generated email/password to [newdata.xlsx](newdata.xlsx).
+
+The repository also includes the MCP server configuration used to connect Playwright, REST, Excel, MySQL, and filesystem tools.
