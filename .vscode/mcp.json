@@ -1,0 +1,62 @@
+{
+  "servers": {
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    },
+    "rest-api": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "dkmaker-mcp-rest-api"
+      ],
+      "env": {
+        "REST_BASE_URL": "https://rahulshettyacademy.com",
+        "HEADER_Accept": "application/json"
+      }
+    },
+    "excel": {
+      "type": "stdio",
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npx-cli.js",
+        "--yes",
+        "@negokaz/excel-mcp-server"
+      ],
+      "env": {
+        "EXCEL_MCP_PAGING_CELLS_LIMIT": "4000"
+      }
+    },
+    "mysql": {
+      "type": "stdio",
+      "command": "C:\\Users\\sweth\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\uv.exe",
+      "args": [
+        "--directory",
+        "C:\\Users\\sweth\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages",
+        "run",
+        "mysql_mcp_server"
+      ],
+      "env": {
+        "MYSQL_HOST": "localhost",
+        "MYSQL_PORT": "3306",
+        "MYSQL_USER": "swetha",
+        "MYSQL_PASSWORD": "3091S@ib",
+        "MYSQL_DATABASE": "swethaTest"
+      }
+    },
+    "filesystem": {
+      "type": "stdio",
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npx-cli.js",
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\sweth\\Downloads\\LLM-MCP+(AI+Agent)-20250402T034336Z-001\\LLM-MCP (AI Agent)"
+      ]
+    }
+  }
+}
