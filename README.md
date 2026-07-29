@@ -1,6 +1,6 @@
 # AIAgentMCP
 
-This project demonstrates an end-to-end browser and API automation flow for Rahul Shetty Academy using:
+This project demonstrates an end-to-end browser and API automation flow for test website Rahul Shetty Academy using:
 
 - Playwright for browser automation
 - Java + Maven for the test runner
